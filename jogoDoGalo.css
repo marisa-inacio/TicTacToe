@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgb(255, 255, 255) 40%, rgb(213, 193, 223) 60%);
+
+}
+
+header {
+    background-image: url('../img/Screen+Shot+2020-02-29+at+1.07.46+PM.png');
+    padding: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 65px;
+    color: rgb(98, 28, 116);
+    text-shadow: 2px 2px rgb(10, 10, 10);
+    text-align: center;
+
+}
+
+.image {
+    content: url('../img/tic-tac-toe.png');
+    width: 20%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+.grid {
+    /* background-image: url('../img/jogoDoGalo.svg'); */
+    position: absolute;
+    border-spacing: 20px;
+    padding: 50px;
+    position: fixed;
+    top: 30%;
+    left: 34%;
+}
+
+.jogador1 {
+    position: fixed;
+    top: 50%;
+    left: 5%;
+}
+
+.jogador2 {
+    position: fixed;
+    top: 60%;
+    left: 5%;
+}
+
+.reset {
+    position: fixed;
+    bottom: 10%;
+    left: 42%;
+    width: 5%;
+    height: 5%;
+    background-color: rgb(141, 141, 192);
+    text-align: center;
+}
+
+.casa {
+    width: 100px;
+    height: 80px;
+    margin: -10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    cursor: url('../img/pencil-cursor.png'), auto;
+    border: blueviolet;
+    outline: none;
+    box-shadow: none;
+}
+
+#casa1,
+#casa4 {
+    border-style: none solid solid none;
+}
+
+#casa7 {
+    border-style: none solid none none;
+}
+
+
+#casa2 {
+    border-style: none none solid none;
+}
+
+#casa5 {
+    border-style: none;
+}
+
+#casa8 {
+    border-style: solid none none none;
+}
+
+#casa3,
+#casa6 {
+    border-style: none none solid solid;
+}
+
+#casa9 {
+    border-style: none none none solid;
+}
+
+.print {
+    position: fixed;
+    bottom: 15%;
+    left: 40%;
+    font-size: x-large;
+
+}
+
+
+#resultado1,
+#resultado2,
+#resultado3 {
+    background-image: url(/img/confetti-8.gif);
+    width: 12%;
+    height: 10%;
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    padding: 50px;
+    position: fixed;
+    top: 40%;
+    left: 36%;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogoDoGalo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link href="jogoDoGalo.css" rel="stylesheet" />
+    <script src="/jogoDoGalo.js"></script>
+
+
+</head>
+
+
+<body>
+
+    <header>
+        JOGO DO GALO
+    </header>
+
+    <div class="image"></div>
+
+    <!-- com o readonlne nao aparece como se fosse escrever -->
+    <div class="grid">
+        <input class="casa" id="casa1" onclick="funcCasa1(); funcResultado();" readonly>
+        <input class="casa" id="casa2" onclick="funcCasa2(); funcResultado();" readonly>
+        <input class="casa" id="casa3" onclick="funcCasa3(); funcResultado();" readonly>
+        <br><br>
+        <input class="casa" id="casa4" onclick="funcCasa4(); funcResultado();" readonly>
+        <input class="casa" id="casa5" onclick="funcCasa5(); funcResultado();" readonly>
+        <input class="casa" id="casa6" onclick="funcCasa6(); funcResultado();" readonly>
+        <br><br>
+        <input class="casa" id="casa7" onclick="funcCasa7(); funcResultado();" readonly>
+        <input class="casa" id="casa8" onclick="funcCasa8(); funcResultado();" readonly>
+        <input class="casa" id="casa9" onclick="funcCasa9(); funcResultado();" readonly>
+    </div>
+
+    <br><br>
+    <!-- Mostra quem é o proximo a jogar -->
+    <p id="print" class="print"></p>
+
+    <div class="jogador1">
+        <span> <i class="fas fa-user-alt fa-2x"></i> JOGADOR 1: </span>
+        <span><i class="far fa-circle fa-2x"></i></span>
+    </div>
+
+
+
+    <div class="jogador2">
+        <span> <i class="fas fa-user-alt fa-2x"></i> JOGADOR 2: </span>
+        <span><i class="fas fa-times fa-2x"></i></span>
+    </div>
+
+    <div id="resultado1">
+        O Jogador X ganhou!
+    </div>
+
+    <div id="resultado2">
+        O Jogador O ganhou!
+    </div>
+
+    <div id="resultado3">
+        Empate!
+    </div>
+
+    <button class="reset" id="but" onclick="reset()">
+        RESET
+    </button>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
